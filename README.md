@@ -1,3 +1,4 @@
+[![Review Assignment Due Date](https://classroom.github.com/assets/deadline-readme-button-22041afd0340ce965d47ae6ef1cefeee28c7c493a6346c4f15d667ab976d596c.svg)](https://classroom.github.com/a/t9h-SO6U)
 # Web Technologies - Exercise 4
 
 The fourth and last assignment is about movie management with user authentication. Users must log in to access all features of the application, including searching for movies using the `https://www.omdbapi.com/` API, adding them to their personal movie collection, and removing movies from their collection. This exercise focuses on implementing secure authentication and ensuring that all movie management features are protected behind a login requirement.
