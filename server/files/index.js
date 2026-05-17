@@ -1,3 +1,4 @@
+/* template */
 import { ButtonBuilder, ElementBuilder, MovieBuilder } from "./builders.js";
 
 // Externalized message strings
@@ -11,6 +12,7 @@ const messages = {
   loggedOutGreeting: 'Bitte logge dich ein, um deine Filmkollektion zu sehen.',
   loginFailed: 'Login failed'
 };
+/* template */
 
 let currentSession = null;
 
@@ -87,11 +89,15 @@ function addMovie(imdbID) {
   fetch(`/movies/${imdbID}`, { method: 'PUT' })
     .then(response => {
       if (response.status === 201) {
-        // task 2.2: drop the just-added entry from the dialog so it can't be re-added
+        /* START - Task 2.2: Remove the movie from the search results dialog
+                   so the user can't accidentally add it multiple times.
+                   Prevents confusion if they search for the same movie again during the session.
+                */
         const entry = document.querySelector(`#searchResults [data-imdb-id="${imdbID}"]`);
         if (entry) {
           entry.remove();
         }
+        /* END - Task 2.2 */
         loadMovies();
         updateGenres();
       } else if (response.status === 200) {
@@ -135,13 +141,19 @@ function searchMovies(query) {
       const resultsDiv = document.getElementById("searchResults");
       resultsDiv.innerHTML = '';
 
-      // task 2.2: empty-results case gets a clear message
+      /* START - Task 2.2: Display a clear message if no search results are found.
+             This improves user experience by explaining why the results area is empty.
+          */
       if (!results || results.length === 0) {
         new ElementBuilder("p").text(messages.noResultsFound).appendTo(resultsDiv);
         return;
       }
+      /* END - Task 2.2 */
 
-      // task 2.2: render each result with title, year and an add button
+      /* START - Task 2.2: Render each search result with title, year, and an "Add" button.
+             Each result is a clickable div with the movie's basic info. Clicking "Add"
+             triggers the addMovie function to fetch full details from OMDb and save to collection.
+          */
       for (const movie of results) {
         new ElementBuilder("div")
           .class("search-result")
@@ -150,6 +162,7 @@ function searchMovies(query) {
           .append(new ButtonBuilder("Add").onclick(() => addMovie(movie.imdbID)))
           .appendTo(resultsDiv);
       }
+      /* END - Task 2.2 */
     })
     .catch(error => {
       console.error('Search failed:', error);
@@ -159,7 +172,10 @@ function searchMovies(query) {
 }
 
 window.onload = function () {
-  // Check session
+  /* START - Task 1.1: Initialize the page by checking whether a session exists.
+             Fetches /session to determine login state, initializes UI accordingly.
+             This runs before displaying movies or any interaction.
+          */
   fetch("/session")
     .then(response => {
       if (!response.ok) throw new Error(`HTTP ${response.status}`);
@@ -174,11 +190,15 @@ window.onload = function () {
       currentSession = null;
       updateUI();
     });
+  /* END - Task 1.1 */
 
   function renderUserGreeting() {
     const greetingElement = document.getElementById('userGreeting');
     if (currentSession) {
-      // task 1.2: greeting like "Hi Joe Doe, du hast dich am 19. April 2026 um 21:15 angemeldet."
+      /* START - Task 1.2: Display a personalized greeting message with the user's login timestamp.
+                Format: "Hi [FirstName] [LastName], du hast dich am [Date] um [Time] angemeldet."
+                The loginTime is in ISO format and is localized to German date/time conventions.
+             */
       const loginDate = new Date(currentSession.loginTime);
       const datePart = loginDate.toLocaleDateString('de-DE', {
         day: 'numeric',
@@ -192,6 +212,7 @@ window.onload = function () {
       greetingElement.textContent =
         `Hi ${currentSession.firstName} ${currentSession.lastName}, ` +
         `du hast dich am ${datePart} um ${timePart} angemeldet.`;
+      /* END - Task 1.2 */
     } else {
       greetingElement.textContent = messages.loggedOutGreeting;
     }
@@ -231,7 +252,10 @@ window.onload = function () {
     }
   }
 
-  // login dialog (task 1.1)
+  /* START - Task 1.1: Login dialog handling.
+             Submitting the login form sends credentials to POST /login.
+             On success, updates the session and refreshes the UI; on failure, displays an error.
+          */
   document.getElementById('loginForm').addEventListener('submit', (e) => {
     e.preventDefault();
     const formData = new FormData(e.target);
@@ -268,8 +292,12 @@ window.onload = function () {
   document.getElementById('cancelLogin').addEventListener('click', () => {
     document.getElementById('loginDialog').close();
   });
+  /* END - Task 1.1 */
 
-  // Search dialog
+  /* START - Task 2.1: Search dialog handling.
+             Opens the search dialog when user clicks "Add movies".
+             Submitting the form calls searchMovies() to fetch results from GET /search.
+          */
   document.getElementById('addMoviesBtn').addEventListener('click', () => {
     const searchForm = document.getElementById('searchForm');
     searchForm.reset();
@@ -286,5 +314,6 @@ window.onload = function () {
   document.getElementById('cancelSearch').addEventListener('click', () => {
     document.getElementById('searchDialog').close();
   });
+  /* END - Task 2.1 */
 };
 

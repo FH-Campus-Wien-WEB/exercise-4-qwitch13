@@ -1,3 +1,4 @@
+<!-- template -->
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -7,25 +8,33 @@
     <link rel="stylesheet" href="index.css" />
     <script type="module" src="index.js"></script>
   </head>
+<!-- template -->
 
   <body>
+    <!-- START - Task 1.1: Semantic page structure with authentication UI -->
     <header>
       <h1>Movies!</h1>
+      <!-- User greeting is rendered dynamically based on login state -->
       <div id="userGreeting" class="user-greeting"></div>
     </header>
     <nav>
+      <!-- Genre filter section (hidden if not logged in) -->
       <h2>Genres</h2>
       <ul id="filter"></ul>
+      <!-- Authentication and movie management buttons -->
       <h2>Manage</h2>
       <ul>
         <li>
+          <!-- Button to open the search/add movies dialog (only visible if logged in) -->
           <button id="addMoviesBtn">Add movies</button>
         </li>
         <li>
+          <!-- Toggles between "Login" and "Logout" based on session state -->
           <button id="authBtn">Login</button>
         </li>
       </ul>
     </nav>
+    <!-- Movie cards are rendered dynamically here by index.js -->
     <main></main>
     <footer>
       <ul>
@@ -39,8 +48,11 @@
         </li>
       </ul>
     </footer>
+    <!-- END - Task 1.1 -->
 
-    <!-- Login Dialog -->
+    <!-- START - Task 1.1: Modal login dialog
+         Opened when user clicks the auth button. Contains form for username and password.
+    -->
     <dialog id="loginDialog">
       <form id="loginForm">
         <label for="username">Username:</label>
@@ -51,8 +63,12 @@
         <button type="button" id="cancelLogin">Cancel</button>
       </form>
     </dialog>
+    <!-- END - Task 1.1 -->
 
-    <!-- search dialog (task 2.1): ids match the handlers in index.js -->
+    <!-- START - Task 2.1: Modal search dialog for adding movies from OMDb API.
+         Opened when user clicks "Add movies" button. Contains search form and results area.
+         IDs match the event listeners in index.js.
+    -->
     <dialog id="searchDialog">
       <form id="searchForm">
         <label for="query">Suche nach einem Film:</label>
@@ -60,8 +76,10 @@
         <button type="submit">Suchen</button>
         <button type="button" id="cancelSearch">Abbrechen</button>
       </form>
+      <!-- Search results are rendered here dynamically -->
       <div id="searchResults"></div>
     </dialog>
+    <!-- END - Task 2.1 -->
 
   </body>
 </html>
