@@ -82,90 +82,147 @@
     }
   },
   "jane": {
-    "tt1972591": {
-      "imdbID": "tt1972591",
-      "Title": "King Arthur: Legend of the Sword",
-      "Released": "2017-05-11",
-      "Runtime": 126,
-      "Genres": [
-        "Action",
-        "Adventure",
-        "Drama"
-      ],
-      "Directors": [
-        "Guy Ritchie"
-      ],
-      "Writers": [
-        "Joby Harold",
-        "Guy Ritchie",
-        "Lionel Wigram"
-      ],
-      "Actors": [
-        "Charlie Hunnam",
-        "Astrid Bergès-Frisbey",
-        "Jude Law"
-      ],
-      "Plot": "Robbed of his birthright, Arthur comes up the hard way in the back alleys of the city. But once he pulls the sword from the stone, he is forced to acknowledge his true legacy - whether he likes it or not.",
-      "Poster": "https://m.media-amazon.com/images/M/MV5BMjM3ODY3Njc5Ml5BMl5BanBnXkFtZTgwMjQ5NjM5MTI@._V1_SX300.jpg",
-      "Metascore": 41,
-      "imdbRating": 6.7
-    },
-    "tt0360717": {
-      "imdbID": "tt0360717",
-      "Title": "King Kong",
-      "Released": "2005-12-13",
-      "Runtime": 187,
-      "Genres": [
-        "Action",
-        "Adventure",
-        "Romance"
-      ],
-      "Directors": [
-        "Peter Jackson"
-      ],
-      "Writers": [
-        "Fran Walsh",
-        "Philippa Boyens",
-        "Peter Jackson"
-      ],
-      "Actors": [
-        "Naomi Watts",
-        "Jack Black",
-        "Adrien Brody"
-      ],
-      "Plot": "A greedy film producer assembles a team of moviemakers and sets out for the infamous Skull Island, where they find more than just cannibalistic natives.",
-      "Poster": "https://m.media-amazon.com/images/M/MV5BMWY0NWE0ZjUtNjRlOS00ZDViLTgxNTQtMGMwN2FhNDY1YTg2XkEyXkFqcGc@._V1_SX300.jpg",
-      "Metascore": 81,
-      "imdbRating": 7.2
-    },
-    "tt0110357": {
-      "imdbID": "tt0110357",
-      "Title": "The Lion King",
-      "Released": "1994-06-23",
-      "Runtime": 88,
+    "tt0417299": {
+      "imdbID": "tt0417299",
+      "Title": "Avatar: The Last Airbender",
+      "Released": "2005-02-21",
+      "Runtime": 23,
       "Genres": [
         "Animation",
-        "Adventure",
-        "Drama"
+        "Action",
+        "Adventure"
       ],
-      "Directors": [
-        "Roger Allers",
-        "Rob Minkoff"
-      ],
+      "Directors": [],
       "Writers": [
-        "Irene Mecchi",
-        "Jonathan Roberts",
-        "Linda Woolverton"
+        "Michael Dante DiMartino",
+        "Bryan Konietzko"
       ],
       "Actors": [
-        "Matthew Broderick",
-        "Jeremy Irons",
-        "James Earl Jones"
+        "Dee Bradley Baker",
+        "Zach Tyler Eisen",
+        "Mae Whitman"
       ],
-      "Plot": "Lion prince Simba and his father are targeted by his bitter uncle, who wants to ascend the throne himself.",
-      "Poster": "https://m.media-amazon.com/images/M/MV5BZGRiZDZhZjItM2M3ZC00Y2IyLTk3Y2MtMWY5YjliNDFkZTJlXkEyXkFqcGc@._V1_SX300.jpg",
-      "Metascore": 88,
-      "imdbRating": 8.5
+      "Plot": "In a war-torn world of elemental powers, a young boy reawakens to undertake a dangerous mystic quest to fulfill his destiny as the Avatar, and bring peace to the world.",
+      "Poster": "https://m.media-amazon.com/images/M/MV5BMDMwMThjYWYtY2Q2OS00OGM2LTlkODQtNDJlZTZmMjAyYmFhXkEyXkFqcGc@._V1_SX300.jpg",
+      "Metascore": null,
+      "imdbRating": 9.3
+    },
+    "tt6156350": {
+      "imdbID": "tt6156350",
+      "Title": "HyperNormalisation",
+      "Released": "2016-10-16",
+      "Runtime": 166,
+      "Genres": [
+        "Documentary"
+      ],
+      "Directors": [
+        "Adam Curtis"
+      ],
+      "Writers": [
+        "Adam Curtis"
+      ],
+      "Actors": [
+        "Adam Curtis",
+        "Donald Trump",
+        "Vladimir Putin"
+      ],
+      "Plot": "Adam Curtis explains how, at a time of confusing and inexplicable world events, politicians and the people they represent have retreated in to a damaging over-simplified version of what is happening.",
+      "Poster": "https://m.media-amazon.com/images/M/MV5BYzFlMjZlNTUtMWIwZi00NGY3LTljMTctZDk3MDIwZGVhMmQ5XkEyXkFqcGc@._V1_SX300.jpg",
+      "Metascore": null,
+      "imdbRating": 8.2
+    },
+    "tt37303446": {
+      "imdbID": "tt37303446",
+      "Title": "Shifty",
+      "Released": "2025-06-14",
+      "Runtime": null,
+      "Genres": [
+        "Documentary"
+      ],
+      "Directors": [],
+      "Writers": [],
+      "Actors": [],
+      "Plot": "When power begins to shift in society, everything becomes unstable, exciting and frightening. Living in Britain at the end of the 20th century.",
+      "Poster": "https://m.media-amazon.com/images/M/MV5BMzBlM2M1ZGEtOWFiNi00NWVkLWJlNzgtMjFiNmQzNmM1OTdkXkEyXkFqcGc@._V1_SX300.jpg",
+      "Metascore": null,
+      "imdbRating": 8
+    },
+    "tt0104255": {
+      "imdbID": "tt0104255",
+      "Title": "Das Fest des Huhnes",
+      "Released": null,
+      "Runtime": 55,
+      "Genres": [
+        "Comedy"
+      ],
+      "Directors": [
+        "Walter Wippersberg"
+      ],
+      "Writers": [
+        "Walter Wippersberg"
+      ],
+      "Actors": [
+        "Frank Oladeinde",
+        "El Hadji Malick Cisse",
+        "Klaus Fenzl"
+      ],
+      "Plot": "A hilarious spoof on ethnological documentaries: an African TV team comes to the Austrian province to document the strange behavior of the natives...",
+      "Poster": "https://m.media-amazon.com/images/M/MV5BOTE0OWFmODUtNWRkMy00OWNiLThhNWQtZDJhY2NjZWVkNmZjXkEyXkFqcGc@._V1_SX300.jpg",
+      "Metascore": null,
+      "imdbRating": 7.2
+    },
+    "tt0079470": {
+      "imdbID": "tt0079470",
+      "Title": "Monty Python's Life of Brian",
+      "Released": "1979-08-17",
+      "Runtime": 94,
+      "Genres": [
+        "Comedy"
+      ],
+      "Directors": [
+        "Terry Jones"
+      ],
+      "Writers": [
+        "Graham Chapman",
+        "John Cleese",
+        "Terry Gilliam"
+      ],
+      "Actors": [
+        "Graham Chapman",
+        "John Cleese",
+        "Michael Palin"
+      ],
+      "Plot": "Born on the original Christmas day in the stable next door to Jesus Christ, Brian of Nazareth spends his life being mistaken for the messiah.",
+      "Poster": "https://m.media-amazon.com/images/M/MV5BNDMzY2E4NjEtMTJiZC00Y2UzLWFiM2MtZWVhNTg5OGQxNjk1XkEyXkFqcGc@._V1_SX300.jpg",
+      "Metascore": 77,
+      "imdbRating": 8
+    },
+    "tt0085959": {
+      "imdbID": "tt0085959",
+      "Title": "Monty Python's the Meaning of Life",
+      "Released": "1983-03-31",
+      "Runtime": 107,
+      "Genres": [
+        "Comedy",
+        "Musical"
+      ],
+      "Directors": [
+        "Terry Jones"
+      ],
+      "Writers": [
+        "Graham Chapman",
+        "John Cleese",
+        "Terry Gilliam"
+      ],
+      "Actors": [
+        "John Cleese",
+        "Terry Gilliam",
+        "Eric Idle"
+      ],
+      "Plot": "The comedy team takes a look at life in all of its stages in their own uniquely silly way.",
+      "Poster": "https://m.media-amazon.com/images/M/MV5BMmZjYzM5OGMtYmY2OS00YzQ3LWEzZjgtY2Q1Yjc1NTNkYTZiXkEyXkFqcGc@._V1_SX300.jpg",
+      "Metascore": 72,
+      "imdbRating": 7.5
     }
   }
 }

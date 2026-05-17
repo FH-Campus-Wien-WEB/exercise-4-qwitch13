@@ -31,11 +31,11 @@
       <ul>
         <li>&copy; Movies!</li>
         <li>&#8213;</li>
-        <li>Written by <a href="mailto:jane.doe@example.com">Jane Doe</a></li>
+        <li>Written by <a href="https://github.com/qwitch13">Yarah Riedl</a></li>
         <li>&#8213;</li>
         <li>
           Visit us at
-          <a href="https://www.hcw.ac.at/" target="_blank">UAS Campus Vienna</a>
+          <a href="https://www.hcw.ac.at/" target="_blank">HCW Campus Vienna</a>
         </li>
       </ul>
     </footer>
@@ -52,9 +52,16 @@
       </form>
     </dialog>
 
-    <!-- Task 2.1: Add a search dialog markup. Make sure the ids of the elements 
-     match the ones used in index.js. Your dialog needs a form and submit and cancel
-     buttons. -->
-    
+    <!-- search dialog (task 2.1): ids match the handlers in index.js -->
+    <dialog id="searchDialog">
+      <form id="searchForm">
+        <label for="query">Suche nach einem Film:</label>
+        <input type="text" id="query" name="query" required>
+        <button type="submit">Suchen</button>
+        <button type="button" id="cancelSearch">Abbrechen</button>
+      </form>
+      <div id="searchResults"></div>
+    </dialog>
+
   </body>
 </html>
